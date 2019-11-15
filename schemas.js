@@ -26,10 +26,7 @@ const userSchema = new Schema({
 
 const dressSchema = new Schema({
 
-    user: {
-        type:mongoose.Schema.Types.ObjectId,
-        ref:'User'
-    },
+  
     picture: String,
     size: String,
     type: String, //coctel, etiquite, etc
