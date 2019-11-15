@@ -120,7 +120,7 @@ app.post('/order/create', (req, res) => {
 app.get('/dress', (req, res) => { // donde se jalan todos los vestidos
 
     let userId = req.query.userId;
-    Dress.find({ user: userId })
+    Dress.find({})
         .exec((err, dresses) => {
             if (err) res.status(409).send({ dresses: null, error: err })
             else {
